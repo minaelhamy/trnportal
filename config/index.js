@@ -6,6 +6,6 @@ module.exports = {
   },
 
   build: {
-    serviceUrl: '<<YOUR_PRODUCTION_API_URL>>'
+    serviceUrl: 'https://recruit-server.onrender.com'
   }
 }
