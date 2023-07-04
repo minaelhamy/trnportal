@@ -1,0 +1,458 @@
+@import 'partials/_variables'; // colors, fonts etc...
+@import 'partials/_mixins'; // custom mixins
+@import 'partials/_layout'; // responsive grid and media queries
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; 
+}
+
+.bg-primaryz, .btn-primaryz {
+  background: linear-gradient(150deg,#53f 35%,#576CFD 90%) !important;
+}
+
+.jumbotron {
+    background: $white !important;
+}
+
+.good-table {
+  .responsive {
+    overflow-x: hidden;
+  }
+}
+
+.demo-restrictions {
+  font: {
+    size: 1em;
+  }
+}
+
+.noMarginLr {
+  padding: 0 !important;
+}
+
+.white {
+  color: $white;
+}
+
+.trn-color {
+  color: $trn-color;
+}
+
+.w-140 {
+  width: 140px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.back-button {
+  line-height: 1.9;
+}
+
+.sz-1 {
+  font-size: 1.1rem;
+}
+
+.margin-tb {
+  margin: 12px 0;
+}
+
+.user-status {
+  top: -4px;
+  position: relative;
+  padding-right: 5px;
+}
+
+.img-wrapper {
+  padding: 50px 0;
+  padding-top: 200px;
+}
+
+hr.style-six {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.trn-login {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 7px;
+}
+
+.login-root {
+  background: linear-gradient(150deg,#53f 35%,#576CFD 90%);
+  // background: linear-gradient(150deg,#53f 35%,#05d5ff 90%);
+  background-size: cover;
+  color: $white;
+  h2, p, input, button {
+    font: {
+      family: $mina;
+      weight: 400;
+    }
+  }
+}
+
+.login-header {
+  padding: 0;
+}
+
+.brand {
+  text-align: center;
+  margin: 0 auto;
+
+  h4 {
+    font: {
+      family: $mina;
+      weight: 400;
+      size: 1.8em;
+    }
+    color: $white;
+    padding-top: 20px;
+  }
+}
+
+.login-logo {
+  width: 170px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.progress {
+  margin: 20px 0;
+}
+
+.profile-container {
+
+  img, h3 {
+    display: inline-block;
+  }
+}
+
+.profile {
+  display: block;
+  line-height: 1.4em;
+  font: {
+    size: 1rem;
+  }
+}
+
+.profile-name {
+  font: {
+    weight: 400;
+  }
+
+}
+
+.profile-grid {
+  margin: 10px 0;
+}
+
+.status {
+  font: {
+    weight: 600;
+  }
+}
+
+.active {
+  color: $active-alt;
+}
+
+.inactive {
+    color: $trn-color;
+}
+
+
+.right {
+  text-align: right;
+}
+
+.candidate-tips {
+  float: left !important;
+}
+
+.border {
+  border: 1px solid black;
+}
+
+.attachments {
+  padding: 0;
+
+  li {
+    padding: 0;
+    margin: 5px 10px;
+    display: inline-block;
+    list-style-type: none;
+
+    i {
+      padding-right: 5px;
+    }
+
+  }
+}
+
+.margin-b {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.profile-skills {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: auto;
+}
+
+.profile-skills-container {
+  @include transition(background-color .2s ease);
+
+  &:hover {
+    background: $trn-color-alt;
+    border-color: $trn-color-alt;
+    color: $white;
+  }
+}
+
+.notes {
+  cursor: auto;
+  @include transition(all .2s ease);
+  &:hover {
+    background: $trn-color-alt;
+    border-color: $trn-color-alt;
+    color: $white;
+  }
+}
+
+.cd-candidate-list-p {
+  font: {
+    family: $mina !important;
+  }
+}
+
+.pads {
+  width: 200px;
+  word-wrap: break-word;
+}
+
+.notifications {
+  z-index: 99;
+  width: 50%;
+}
+
+a {
+  text-decoration: none !important;
+  @include transition(all .2s ease);
+  color: $trn-color;
+
+  &:hover {
+    color: $trn-color-alt;
+  }
+}
+
+.trn-text {
+  color: $trn-color-alt;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -250px;
+  visibility: hidden;
+}
+
+.home {
+  margin: 150px 0;
+}
+
+.separator {
+  margin: 20px 0;
+}
+
+.separator-10 {
+  margin: 10px 0;
+}
+
+.profile-photo {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 3px;
+  border-radius: 30px;
+}
+
+.profile-pic {
+  display: block;
+  margin: 15px auto;
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  clear: both;
+}
+
+.edit-profile-pic {
+  display: block;
+  width: 110px;
+  height: auto;
+  clear: both;
+}
+
+.candidate-list {
+  display: block;
+  margin: 15px auto;
+  width: 120px;
+  height: auto;
+}
+
+.anchor-el {
+  vertical-align: middle;
+}
+
+.space {
+  padding: 0 5px;
+}
+
+.last-updated {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.trn-logo-nav {
+  border-right: 1px solid hsla(0, 0%, 100%, .7);
+  font: {
+    weight: 700;
+  }
+  padding-right: 15px !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: {
+    size: 100%;
+    family: $mina !important;
+  }
+}
+
+.sticky {
+  position: sticky !important;
+  top: 10px;
+}
+
+p {
+  word-wrap: break-word;
+  font-family: $ptsans;
+}
+
+.center {
+  text-align: center;
+}
+
+.logo {
+  margin: 0 auto;
+  display: block;
+}
+
+.the-header {
+  text-align: center;
+  display: block;
+  margin: 50px auto;
+
+  h2 {
+    line-height: 1.5;
+  }
+}
+
+.form-header {
+  margin: 20px 0;
+}
+
+.the-footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.navigation, .footers {
+  background: $nav-bg;
+	height: 50px;
+  color: red;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: 'Cairo', sans-serif;
+  z-index: 999;
+
+  ul {
+    list-style-type: none;
+    margin: 10px auto;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $nav-links;
+
+    &:hover {
+      color: $nav-links-hover;
+    }
+  }
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  ul {
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+  }
+}
+
+.footers {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+tbody {
+  tr {
+    td {
+      div {
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.global-search-icon {
+  top: -5px !important;
+
+}
+
+.global-search-input {
+  font: {
+    family: 'Cairo', sans-serif !important;
+    size: 16px !important;
+  }
+  width: 100% !important;
+}
